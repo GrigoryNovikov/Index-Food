@@ -137,6 +137,18 @@ body {
    background-size: cover;
 }
 
+.slide-autumn {
+   background-image: url(../images/autumn.png);
+   background-repeat: no-repeat;
+   background-size: cover;
+}
+
+.slide-vitamin {
+   background-image: url(../images/vitamins.png);
+   background-repeat: no-repeat;
+   background-size: cover;
+}
+
 .slide-title {
    font-family: Roboto;
    font-style: normal;
@@ -407,7 +419,7 @@ body {
 }
 
 .tabs-card {
-   margin: 0 15px;
+   margin: 15px;
    max-width: 270px;
    border-radius: 20px;
    overflow: hidden;
@@ -575,9 +587,74 @@ body {
 
 .footer-social-link {
    display: inline-block;
-   
    width: 28px;
    height: 28px;
-   margin:0 10px;
+   margin: 0 10px;
    text-decoration: none;
+}
+
+.slider-buttons {
+   z-index: 1;
+   position: absolute;
+   bottom: 40px;
+   right: 46px;
+   display: flex;
+   align-items: center;
+}
+
+.swiper {
+   position: relative;
+}
+
+.slider-button-prev {
+   margin-right: 15px;
+}
+
+.slider-button {
+   cursor: pointer;
+}
+
+@media (max-width: 1260px) {
+   .container {
+      max-width: 960px;
+   }
+   .search-form {
+      margin-left: 40px;
+      margin-right: 40px;
+   }
+   .tabs-content {
+      flex-wrap: wrap;
+   }
+   .tabs-card {
+      max-width: calc(50% - 30px);
+   }
+}
+
+@media (max-width: 992px) {
+   .container {
+      max-width: 760px;
+   }
+   .slide {
+      padding: 70px;
+   }
+   .delivery-card {
+      width: calc(50% - 30px);
+   }
+}
+
+@media (max-width: 992px) {
+   .container {
+      max-width: 560px;
+   }
+   .header {
+      flex-wrap: wrap;
+   }
+   .search-form {
+      order: 5;
+      margin-left: 22px;
+      margin-right: 9px;
+   }
+   .promo {
+      flex-wrap: wrap;
+   }
 }
