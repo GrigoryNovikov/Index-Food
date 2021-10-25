@@ -57,7 +57,7 @@ body {
 }
 
 .search-button {
-   background-color:transparent;
+   background-color: transparent;
    position: absolute;
    outline: none;
    right: 0;
@@ -73,7 +73,7 @@ body {
    font-size: 14px;
 }
 
-.shopping-cart{
+.shopping-cart {
    width: 49px;
    height: 49px;
    border-radius: 50%;
@@ -101,7 +101,7 @@ body {
    background-color: #FFAF19;
    width: 18px;
    height: 18px;
-   border-radius:50%;
+   border-radius: 50%;
    padding: 5px;
    font-size: 8px;
    position: absolute;
@@ -116,7 +116,7 @@ body {
 
 .slide {
    background-color: gray;
-   border-radius:20px;
+   border-radius: 20px;
    overflow: hidden;
    max-width: 1190px;
    min-height: 400px;
@@ -156,7 +156,7 @@ body {
 }
 
 .button-primary {
-   background-color:#F66A15; 
+   background-color: #F66A15;
    color: #FFFFFF;
 }
 
@@ -166,6 +166,7 @@ body {
 }
 
 .button {
+   cursor: pointer;
    border-radius: 25px;
    text-decoration: none;
    display: inline-block;
@@ -191,16 +192,20 @@ body {
 }
 
 .promo {
+   margin: -20px;
    padding-top: 50px;
-   padding-bottom: 50px;
+   display: flex;
+   justify-content: space-between;
 }
 
 .card {
    position: relative;
+   flex: 50%;
    border-radius: 20px;
    overflow: hidden;
+   margin: 20px;
    padding: 32px;
-   width: 570px;
+   max-width: 570px;
    min-height: 380px;
    display: flex;
    flex-direction: column;
@@ -253,11 +258,326 @@ body {
    margin-bottom: 25px;
 }
 
-.sweet-basket{
+.card-image {
+   object-fit: cover;
    position: absolute;
    top: 0;
    left: 0;
-   max-width: 100%;
-   max-height: 100%;
+   width: 100%;
+   height: 100%;
    z-index: -2;
+}
+
+.section-title {
+   margin-top: 0;
+   margin-bottom: 47px;
+   font-weight: 500;
+   font-size: 32px;
+   line-height: 23px;
+}
+
+.delivery-week {
+   padding: 100px 0;
+}
+
+.delivery-cards {
+   display: flex;
+   flex-wrap: wrap;
+   margin: -15px;
+}
+
+.delivery-card {
+   margin: 15px;
+   width: 275px;
+   height: 182px;
+   border-radius: 18px;
+   overflow: hidden;
+   position: relative;
+}
+
+.delivery-image {
+   object-fit: cover;
+   width: 100%;
+   height: 100%;
+}
+
+.delivery-tag {
+   position: absolute;
+   left: 10px;
+   top: 16px;
+   border-radius: 30px;
+   font-weight: 500;
+   font-size: 20px;
+   line-height: 23px;
+   color: #fff;
+   padding: 5px 10px;
+}
+
+.tag-health {
+   background: #D0FD89;
+   color: #49494F;
+}
+
+.tag-vegetables {
+   background: #AEBC41;
+}
+
+.tag-meat {
+   background: #B86B78;
+}
+
+.tag-bird {
+   background: #D68334;
+}
+
+.tag-health {
+   background: #D0FD89;
+   color: #49494F;
+}
+
+.tag-vegetables {
+   background: #AEBC41;
+   color: #fff;
+}
+
+.tag-health {
+   background: #D0FD89;
+   color: #49494F;
+}
+
+.tag-vegetables {
+   background: #AEBC41;
+   color: #fff;
+}
+
+.tag-fish {
+   background: #CD6255;
+}
+
+.tag-kids {
+   background: #FFFDBF;
+   color: #49494F;
+}
+
+.tag-parents {
+   background: #F6FDC8;
+   color: #49494F;
+}
+
+.tag-holiday {
+   background: #FEF7FE;
+   color: #49494F;
+}
+
+.section-grey {
+   background: #F6F6F6;
+   padding: 40px 0;
+}
+
+.section-title {
+   font-weight: 500;
+   font-size: 32px;
+   line-height: 23px;
+}
+
+.tabs {
+   display: flex;
+   margin: 0;
+   padding: 0;
+   list-style: none;
+   margin-bottom: 62px;
+}
+
+.tabs-link {
+   font-weight: normal;
+   font-size: 20px;
+   line-height: 23px;
+   color: #49494F;
+   text-decoration: none;
+   margin-right: 58px;
+}
+
+.tabs-link.active {
+   color: #F37321;
+}
+
+.tabs-content {
+   display: flex;
+   margin: 0 -15px;
+}
+
+.tabs-card {
+   margin: 0 15px;
+   max-width: 270px;
+   border-radius: 20px;
+   overflow: hidden;
+   background-color: #fff;
+   box-shadow: 0px 4px 40px rgba(0, 0, 0, 0.1);
+}
+
+.tabs-image {
+   max-width: 100%;
+}
+
+.tabs-card-content {
+   padding: 22px;
+}
+
+.tabs-info {
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+}
+
+.tabs-title {
+   margin-top: 0;
+   margin-bottom: 13px;
+   font-weight: 500;
+   font-size: 20px;
+   line-height: 23px;
+}
+
+.tabs-decription {
+   font-weight: 500;
+   font-size: 14px;
+   line-height: 23px;
+   color: #B9B9BE;
+}
+
+.tabs-price {
+   font-weight: 500;
+   font-size: 23px;
+   line-height: 23px;
+   color: #4B4B51;
+   display: block;
+   margin-bottom: 5px;
+}
+
+.tabs-weight {
+   font-weight: 500;
+   font-size: 17px;
+   line-height: 20px;
+   color: #AAAAB1;
+}
+
+.button-outline {
+   padding: 15px 25px;
+   background-color: transparent;
+   border: 2px solid #F37321;
+   box-sizing: border-box;
+   font-weight: 500;
+   font-size: 16px;
+   line-height: 19px;
+   color: #F37321;
+}
+
+.button-center {
+   display: block;
+   margin: 60px auto 20px;
+   width: 315px;
+}
+
+.advantages.container {
+   padding: 100px 0;
+}
+
+.advantages-title {
+   font-weight: 500;
+   font-size: 32px;
+   line-height: 23px;
+   margin-bottom: 52px;
+   color: #000000;
+   margin-top: 0;
+}
+
+.advantages-cards {
+   display: flex;
+   justify-content: space-between;
+   margin-bottom: 100px;
+}
+
+.advantage-card-content {
+   display: flex;
+   justify-content: center;
+}
+
+.advantage-card {
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   border: 1px solid #E9E9E9;
+   border-radius: 18px;
+   box-shadow: 0px 4px 40px rgba(0, 0, 0, 0.1);
+   max-width: 270px;
+   max-height: 296px;
+}
+
+.advantage-image {
+   margin: 30px 0 35px;
+}
+
+.advantage-card-content {
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   margin-bottom: 25px;
+}
+
+.advantage-card-title {
+   font-weight: bold;
+   font-size: 16px;
+   line-height: 23px;
+   color: #000000;
+   padding: 0 35px;
+   text-align: center;
+   display: block;
+   margin-bottom: 13px;
+}
+
+.advantage-card-text {
+   padding: 23px;
+   padding-top: 0;
+   font-weight: normal;
+   font-size: 14px;
+   line-height: 22px;
+   text-align: center;
+   color: #49494F;
+}
+
+.footer {
+   background: #F6F6F6;
+   padding: 40px 0;
+}
+
+.footer-container {
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+}
+
+.footer-nav {
+   flex-grow: 1;
+}
+
+.footer-nav-link {
+   font-weight: normal;
+   font-size: 16px;
+   line-height: 23px;
+   text-decoration-line: underline;
+   color: #000000;
+   margin-left: 50px;
+}
+
+.footer-social {
+   margin: 0 -10px;
+   font-size: 0;
+}
+
+.footer-social-link {
+   display: inline-block;
+   
+   width: 28px;
+   height: 28px;
+   margin:0 10px;
+   text-decoration: none;
 }
